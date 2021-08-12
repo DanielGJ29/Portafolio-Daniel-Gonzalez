@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Mulish:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2bdb303e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Daniel</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-section contenedor row align-item-center">
+            <div class="col-12 main-text text-center">
+                <p>Daniel Gonzalez</p>
+                <h1>Developer web</h1>
+            </div>
+            <!--<div class="col-6 main-imagen">
+                <img src="assets/img/banner/banner3.jpg" alt="">
+            </div>-->
+        </div>
+        <div class="row main-navbar align-item-center">
+            <div class="title-nav col-9 d-flex align-item-center">
+                <p><span><</span>Daniel Gonzalez<span>/></span> </p>
+            </div>
+            <nav class="nav-item d-flex col-3">
+                <a href="#about">Sobre mí</a>
+                <a href="#portfolio">Portafolio</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+            <div class="nav-bars"><span class="fas fa-bars"></span></div>
+        </div>  
+    </header>
+    <!--***ABOUT ME****-->
+    <section id="about">
+        <div class="contenedor row about" >
+            <div class="col-6 about-img">
+                <img src="assets/img/banner/yo.jpeg" alt="fotografia">
+            </div>
+            <div class="col-6 about-me">
+                <p>Mis detalles sobre mi</p>
+                <h2>Sobre mi</h2>
+                <div class="line about-line"></div>
+                <p>Hola, me llamo Daniel Felipe Gonzalez Jimenez me considero una persona 
+                    autodidacta y gusto por la programación lo que me motiva a estar 
+                    constantemente capacitandome tomando cursos y aprender nuevas tecnologias.
+                </p>
+                <p class="hobies">Mis hobies</p>
+                <ul class="hobies-item d-flex justify-content-between">
+                    <li> <span class="far fa-hand-point-right"></span> Viajar</li>
+                    <li> <span class="far fa-hand-point-right"></span> Tocar el piano</li>
+                    <li> <span class="far fa-hand-point-right"></span> Ir al cine</li>
+                    <li> <span class="far fa-hand-point-right"></span> Aprender cosas nuevas</li>
+                </ul>
+                <div class="about-btn">
+                    <a class="btn" href="#">Descargar Cv.</a>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!--***SKILL***-->
+    <section class="contenedor">
+        <div class="skill text-center">
+            <h2>Mis Skills</h2>
+            <div class="line"></div>
+        </div>
+        <div class="d-flex justify-content-center skill-content ">
+            <div class="col-4 text-center skill-item">
+                <span class="fab fa-html5"></span>
+                <p>Html5</p>
+            </div>
+            <div class="col-4 text-center skill-item">
+                <span class="fab fa-css3-alt"></span>
+                <p>Css3</p>
+            </div>
+            <div class="col-4 text-center skill-item">
+                <span class="fab fa-js-square"></span>
+                <p>Javascript</p>
+            </div>
+        </div>
+    </section>
+    <!--***PORTFOLIO***-->
+    <section class="contenedor portfolio" id="portfolio">
+        <div class="portfolio-title text-center">
+            <h2>Mi portafolio</h2>
+            <div class="line"></div>
+            <p class="center">There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration.</p>
+        </div>
+        <div class="row justify-content-between portfolio-image">
+            <div class="portfolio-image-item">
+               <img src="assets/img/project/1.jpg" alt="imagen-portafolio">
+                <div class="text-center portfolio-text">
+                    <p>product desig</p>
+                    <h2>Desarrollo de App</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                </div>
+            </div>
+            <div class="portfolio-image-item">
+                <img src="assets/img/project/2.jpg" alt="imagen-portafolio">
+                 <div class="text-center portfolio-text">
+                     <p>product desig</p>
+                     <h2>Sitos Web</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                 </div>
+             </div>
+             <div class="portfolio-image-item">
+                <img src="assets/img/project/3.jpg" alt="imagen-portafolio">
+                 <div class="text-center portfolio-text">
+                     <p>product desig</p>
+                     <h2>App web</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                 </div>
+             </div> 
+        </div>
+    </section>
+    <!--***CONTACT***-->
+    <section class="contenedor contact"  id="contact">
+        <div class="contact-title text-center">
+            <h2>Contacto</h2>
+            <div class="line"></div>
+        </div>
+        <form action="">
+            <div class="contact-form d-flex flex-column col-6 center">              
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre: *" >  
+                <input type="email" id="email" placeholder="Correo: *">       
+                <textarea name="mensage"  id="mensage" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <div class="contact-btn">
+                    <button class="btn" type="button">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!--***BUTTON UP-->
+    <section class="up d-flex align-item-center justify-content-center">
+        <div><span class="fas fa-angle-up"></span></div>
+    </section>
+    <!--***FOOTER***-->
+    <footer class="footer  d-flex align-items-center">
+        <div class="d-flex col-12 justify-content-around align-item-center footer-content">
+            <div>
+                <a class="correo " href="mailto:daniel.zam29@gmail.com"  target="_black"><span class="fa fa-envelope"></span></a>
+                <a class="facebook" href="https://www.facebook.com/profile.php?id=100001074764977"  target="_black"><span class="fa fa-facebook"></span></a>
+                <a class="link" href="http://www.linkedin.com/in/daniel-felipe-gonzález-jimenez-9bb0901b4" target="_black"><span class="fa fa-linkedin"></span></a>
+                <a class="git" href="https://github.com/DanielGJ29" target="_black"><span class="fab fa-github"></span></a>
+            </div>
+            <div>      
+                <p class="text-white text-center">Copyright © <script>let d = new Date(); document.write(d.getFullYear())</script> Daniel Gonzalez. 
+            </div>
+        </div>    
+    </footer>
+
+<script src="assets/js/javascript.js"></script>
+</body>
+</html>
