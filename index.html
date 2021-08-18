@@ -10,35 +10,39 @@
     <title>Daniel</title>
 </head>
 <body>
-    <header class="main-header">
-        <div class="main-section contenedor row align-item-center">
-            <div class="col-12 main-text text-center">
-                <p>Daniel Gonzalez</p>
-                <h1>Developer web</h1>
+    <section id="home">
+        <header class="main-header">
+            <div class="main-header-title contenedor row align-item-center justify-content-center">
+                <div class="col-12 header-title text-center">
+                    <p>Daniel Gonzalez</p>
+                    <h1>Developer web</h1>
+                    <span class="fas fa-laptop-code"></span>
+                </div>
             </div>
-            <!--<div class="col-6 main-imagen">
-                <img src="assets/img/banner/banner3.jpg" alt="">
-            </div>-->
-        </div>
-        <div class="row main-navbar align-item-center">
-            <div class="title-nav col-9 d-flex align-item-center">
-                <p><span><</span>Daniel Gonzalez<span>/></span> </p>
-            </div>
-            <nav class="nav-item d-flex col-3">
-                <a href="#about">Sobre mí</a>
-                <a href="#portfolio">Portafolio</a>
-                <a href="#contact">Contacto</a>
-            </nav>
-            <div class="nav-bars"><span class="fas fa-bars"></span></div>
-        </div>  
-    </header>
+            <div class=" main-header-navbar" id="navbar">
+                <div class="main-header-navbar-item contenedor row align-item-center justify-content-between">
+                    <div class="title-nav col-8 d-flex">
+                        <p><span><</span>Daniel Gonzalez<span>/></span> </p>
+                    </div>
+                    <nav class="nav-item d-flex align-item-center col-4" id="nav-item">
+                        <a class="home item active" href="#home">Inicio</a>
+                        <a class="about_my item" href="#about_my">Sobre mí</a>
+                        <a class="services_my item" href="#services_my">Servicios</a>
+                        <a class="portfolio_my item" href="#portfolio_my">Portafolio</a>
+                        <a class="contact_my item" href="#contact_my">Contacto</a>
+                    </nav>
+                    <div class="nav-bars" ><span class="fa fa-bars" id="bars"></span></div>
+                </div>
+            </div>  
+        </header>
+    </section>
     <!--***ABOUT ME****-->
-    <section id="about">
+    <section id="about_my">
         <div class="contenedor row about" >
-            <div class="col-6 about-img">
+            <div class="col-5 about-img">
                 <img src="assets/img/banner/yo.jpeg" alt="fotografia">
             </div>
-            <div class="col-6 about-me">
+            <div class="col-7 about-me">
                 <p>Mis detalles sobre mi</p>
                 <h2>Sobre mi</h2>
                 <div class="line about-line"></div>
@@ -60,10 +64,10 @@
         </div>
     </section>
     <!--***SKILL***-->
-    <section class="contenedor">
+    <section class="contenedor" id="skill">
         <div class="skill text-center">
-            <h2>Mis Skills</h2>
-            <div class="line"></div>
+            <h3>Mis Skills</h3>
+            <!-- <div class="line"></div> -->
         </div>
         <div class="d-flex justify-content-center skill-content ">
             <div class="col-4 text-center skill-item">
@@ -74,14 +78,48 @@
                 <span class="fab fa-css3-alt"></span>
                 <p>Css3</p>
             </div>
-            <div class="col-4 text-center skill-item">
+            <div class="col-4 text-center skill-item javascript">
                 <span class="fab fa-js-square"></span>
                 <p>Javascript</p>
             </div>
         </div>
     </section>
+    <!--***SERVICES***-->
+    <section id="services_my">
+        <div class="contenedor services">
+            <div class="portfolio-title text-center">
+                <h2>Mis servicios</h2>
+                <div class="line"></div>
+                <p class="center">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration.</p>
+            </div>
+            <div class="row flex-column services-content">
+                <div class="col-4 service-item">
+                    <div class="text-center">
+                        <h3>Desarrollo web</h3>
+                        <span class="fas fa-layer-group"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio alias molestiae earum esse nesciunt sint, voluptatum odio.</p>
+                    </div>
+                </div>
+                <div class="col-4 service-item middle">
+                    <div class="text-center">
+                        <h3>Aplicaciones Móviles</h3>
+                        <span class="fas fa-mobile-alt"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio alias molestiae earum esse nesciunt sint, voluptatum odio.</p>
+                    </div>
+                </div>
+                <div class="col-4 service-item services-item-3">
+                    <div class="text-center">
+                        <h3>Diseño web</h3>
+                        <span class="fas fa-palette"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio alias molestiae earum esse nesciunt sint, voluptatum odio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--***PORTFOLIO***-->
-    <section class="contenedor portfolio" id="portfolio">
+    <section class="contenedor portfolio" id="portfolio_my">
         <div class="portfolio-title text-center">
             <h2>Mi portafolio</h2>
             <div class="line"></div>
@@ -90,33 +128,49 @@
         </div>
         <div class="row justify-content-between portfolio-image">
             <div class="portfolio-image-item">
-               <img src="assets/img/project/1.jpg" alt="imagen-portafolio">
+               <img class="img-item" src="assets/img/project/1.jpg" alt="imagen-portafolio">
                 <div class="text-center portfolio-text">
-                    <p>product desig</p>
-                    <h2>Desarrollo de App</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                    <div>
+                        <p>product desig</p>
+                        <h2>Desarrollo de App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-image-item">
-                <img src="assets/img/project/2.jpg" alt="imagen-portafolio">
+                <img class="img-item" src="assets/img/project/2.jpg" alt="imagen-portafolio">
                  <div class="text-center portfolio-text">
-                     <p>product desig</p>
-                     <h2>Sitos Web</h2>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                     <div>
+                        <p>product desig</p>
+                        <h2>Sitos Web</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                     </div>
                  </div>
              </div>
              <div class="portfolio-image-item">
-                <img src="assets/img/project/3.jpg" alt="imagen-portafolio">
+                <img class="img-item" src="assets/img/project/3.jpg" alt="imagen-portafolio">
                  <div class="text-center portfolio-text">
-                     <p>product desig</p>
-                     <h2>App web</h2>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                     <div>
+                        <p>product desig</p>
+                        <h2>Sitos Web</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="portfolio-image-item portfolio-image-item-3">
+                <img class="img-item a" src="assets/img/project/4.jpg" alt="imagen-portafolio">
+                 <div class="text-center portfolio-text">
+                     <div>
+                        <p>product desig</p>
+                        <h2>App web</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui sed dolor</p>
+                     </div>
                  </div>
              </div> 
         </div>
     </section>
     <!--***CONTACT***-->
-    <section class="contenedor contact"  id="contact">
+    <section class="contenedor contact"  id="contact_my">
         <div class="contact-title text-center">
             <h2>Contacto</h2>
             <div class="line"></div>
@@ -133,20 +187,20 @@
         </form>
     </section>
     <!--***BUTTON UP-->
-    <section class="up d-flex align-item-center justify-content-center">
+    <div class="up d-flex align-item-center justify-content-center" id="up">
         <div><span class="fas fa-angle-up"></span></div>
-    </section>
+    </div>
     <!--***FOOTER***-->
     <footer class="footer  d-flex align-items-center">
-        <div class="d-flex col-12 justify-content-around align-item-center footer-content">
-            <div>
-                <a class="correo " href="mailto:daniel.zam29@gmail.com"  target="_black"><span class="fa fa-envelope"></span></a>
-                <a class="facebook" href="https://www.facebook.com/profile.php?id=100001074764977"  target="_black"><span class="fa fa-facebook"></span></a>
-                <a class="link" href="http://www.linkedin.com/in/daniel-felipe-gonzález-jimenez-9bb0901b4" target="_black"><span class="fa fa-linkedin"></span></a>
+        <div class="row contenedor justify-content-center align-item-center footer-content">
+            <div class="col-3 d-flex footer-link">
+                <a class="correo " href="mailto:daniel.zam29@gmail.com"  target="_black"><span class="fas fa-envelope"></span></a>
+                <a class="facebook" href="https://www.facebook.com/profile.php?id=100001074764977"  target="_black"><span class="fab fa-facebook"></span></a>
+                <a class="link" href="http://www.linkedin.com/in/daniel-felipe-gonzález-jimenez-9bb0901b4" target="_black"><span class="fab fa-linkedin"></span></a>
                 <a class="git" href="https://github.com/DanielGJ29" target="_black"><span class="fab fa-github"></span></a>
             </div>
-            <div>      
-                <p class="text-white text-center">Copyright © <script>let d = new Date(); document.write(d.getFullYear())</script> Daniel Gonzalez. 
+            <div class="col-9 d-flex f">      
+                <p class="text-white">Copyright © <script>let d = new Date(); document.write(d.getFullYear())</script> Daniel Gonzalez. 
             </div>
         </div>    
     </footer>
