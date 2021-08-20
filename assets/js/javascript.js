@@ -38,7 +38,7 @@ bars.onclick = clickDown;
 
 //SCROLL SECTION / NAV ITEM ACTIVE
 const sections = document.querySelectorAll("section");
-const link = document.querySelectorAll("#nav-item a");
+const link = document.querySelectorAll(".item");
 
 function scrollSection(){
     let nameSection = "";
@@ -47,13 +47,15 @@ function scrollSection(){
         const sectionHeight = section.clientHeight; 
         if(scrollY > (sectionScrollTop - sectionHeight /3 )){
             nameSection = section.getAttribute("id");
-        }
-        
+        }    
     });
+
     link.forEach(element => {
         element.classList.remove("active");
+        element.classList.remove("item-before-activo");
         if(element.classList.contains(nameSection)){
             element.classList.add("active");
+            element.classList.add("item-before-activo");
         }
     });
 
