@@ -23,7 +23,7 @@
         >
           <div class="col-12 header-title text-center">
             <p>Daniel Gonzalez</p>
-            <h1>Desarrollador web Jr.</h1>
+            <h1>Developer Full stac Jr.</h1>
             <span class="fas fa-laptop-code"></span>
           </div>
         </div>
@@ -39,8 +39,8 @@
                 >Inicio</a
               >
               <a class="about_my item" href="#about_my">Sobre mí</a>
-              <a class="services_my item" href="#services_my">Servicios</a>
               <a class="portfolio_my item" href="#portfolio_my">Portafolio</a>
+              <a class="services_my item" href="#services_my">Cursos</a>
               <a class="contact_my item" href="#contact_my">Contacto</a>
             </nav>
             <div class="nav-bars">
@@ -99,21 +99,6 @@
           <span class="fab fa-css3-alt"></span>
           <p>Css3</p>
         </div>
-        <div class="col-4 text-center skill-item javascript">
-          <span class="fab fa-js-square"></span>
-          <p>Javascript</p>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-center skill-content">
-        <div class="col-4 text-center skill-item javascript">
-          <span class="fab fa-react"></span>
-          <p>React</p>
-        </div>
-        <div class="col-4 text-center skill-item javascript">
-          <span class="fab fa-node"></span>
-          <p>Node</p>
-        </div>
         <div class="col-4 text-center skill-item">
           <span class="fab fa-bootstrap"></span>
           <p>Boostrap</p>
@@ -123,40 +108,234 @@
           <p>tailwind</p>
         </div>
       </div>
+
+      <div class="d-flex justify-content-center skill-content">
+        <div class="col-4 text-center skill-item javascript">
+          <span class="fab fa-js-square"></span>
+          <p>Javascript</p>
+        </div>
+        <div class="col-4 text-center skill-item javascript">
+          <span class="fab fa-react"></span>
+          <p>React</p>
+        </div>
+        <div class="col-4 text-center skill-item javascript">
+          <span class="fab fa-node"></span>
+          <p>Node</p>
+        </div>
+
+        <!-- <div class="col-4 text-center skill-item">
+          <img src="assets/img/django.png" width="110" />
+          <p>Django</p>
+        </div> -->
+      </div>
     </section>
-    <!--***SERVICES***-->
+
+    <!--***PORTFOLIO***-->
+    <section class="contenedor portfolio" id="portfolio_my">
+      <div class="portfolio-title text-center">
+        <h2>Mi portafolio</h2>
+        <div class="line"></div>
+        <p class="center">
+          Estos son algunos de los proyectos que he realizado.
+        </p>
+      </div>
+      <div class="row flex-grap portfolio-image">
+        <div class="portfolio-image-item">
+          <div class="img-item">
+            <img
+              class=""
+              src="assets/img/project/trivia.jpg"
+              alt="imagen-portafolio"
+            />
+          </div>
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <!-- <p>product desig</p> -->
+              <h2>Trivia app</h2>
+              <p>Trivia desarrollada con html5, css3 y javascript.</p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://trivia-eosin.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/Trivia"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-image-item">
+          <img
+            class="img-item"
+            src="assets/img/project/todolist.jpg"
+            alt="imagen-portafolio"
+          />
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <!-- <p>product desig</p> -->
+              <h2>ToDoList</h2>
+              <p>
+                Aplicación de tareas donde se puede filtrar tareas completadas y
+                no completadas, desarrollado con React Hooks useState,
+                useEffect.
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://todolist-lake.vercel.app"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/ToDoList"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-image-item portfolio-image-item-3">
+          <img
+            class="img-item a"
+            src="assets/img/project/weather.jpg"
+            alt="imagen-portafolio"
+          />
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <h2>App Weather</h2>
+              <p>
+                Aplicación que permite consultar el clima de una ciudad, usando
+                React y Boostrap obteniendo los datos de la api rest de Weather
+                API.
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://weather-app-wheat-six.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/weather-app"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-image-item">
+          <img
+            class="img-item"
+            src="assets/img/project/github.jpg"
+            alt="imagen-portafolio"
+          />
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <h2>APP GitHub</h2>
+              <p>
+                Aplicación que permite consultar un repositorio, sus respectivos
+                proyectos y sus seguidores, creado con React y Tailwind.
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://github-app-pi.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/GitHub_app"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-image-item">
+          <img
+            class="img-item"
+            src="assets/img/project/ecommerce.jpg"
+            alt="imagen-portafolio"
+          />
+          <div class="text-center portfolio-text">
+            <div class="portfolio-content">
+              <h2>ECOMMERCE</h2>
+              <p>
+                Ecommerce creada con React Hooks useContext, useRedux, tailwinds
+                y api rest Fake Store API.
+              </p>
+            </div>
+            <div class="link">
+              <a
+                class=""
+                href="https://e-commerce-app-plum.vercel.app/"
+                target="_blank"
+                ><span class="fas fa-pager"></span>Ver Proyecto</a
+              >
+              <a
+                class=""
+                href="https://github.com/DanielGJ29/e-commerce-app"
+                target="_blank"
+                ><span class="fab fa-github"></span>GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--***CERTIFICATE***-->
     <section id="services_my">
       <div class="contenedor services">
         <div class="portfolio-title text-center">
-          <h2>Mis servicios</h2>
+          <h2>Cursos</h2>
           <div class="line"></div>
-          <p class="center">
+          <!-- <p class="center">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
-          </p>
+          </p> -->
         </div>
         <div class="row flex-column services-content">
           <div class="col-4 service-item">
             <div class="text-center">
-              <h3>Desarrollo web</h3>
-              <span class="fas fa-layer-group"></span>
-              <p>
+              <img
+                src="./assets/img/certificate/61585294264368.png"
+                width="300"
+                alt="certificate"
+              />
+
+              <h3>Back-End con Node</h3>
+
+              <!-- <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 alias molestiae earum esse nesciunt sint, voluptatum odio.
-              </p>
+              </p> -->
             </div>
           </div>
-          <!-- <div class="col-4 service-item middle">
+          <div class="col-4 service-item middle">
             <div class="text-center">
-              <h3>Aplicaciones Móviles</h3>
-              <span class="fas fa-mobile-alt"></span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                alias molestiae earum esse nesciunt sint, voluptatum odio.
-              </p>
+              <img
+                src="./assets/img/certificate/13753394306704.png"
+                width="300"
+                alt="certificate2"
+              />
+              <h3>Back-End con Python, Django</h3>
             </div>
-          </div> -->
-          <div class="col-4 service-item services-item-3">
+          </div>
+          <!-- <div class="col-4 service-item services-item-3">
             <div class="text-center">
               <h3>Diseño web</h3>
               <span class="fas fa-palette"></span>
@@ -165,122 +344,7 @@
                 alias molestiae earum esse nesciunt sint, voluptatum odio.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--***PORTFOLIO***-->
-    <section class="contenedor portfolio" id="portfolio_my">
-      <div class="portfolio-title text-center">
-        <h2>Mi portafolio</h2>
-        <div class="line"></div>
-        <p class="center">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration.
-        </p>
-      </div>
-      <div class="row flex-grap portfolio-image">
-        <div class="portfolio-image-item">
-          <img
-            class="img-item"
-            src="assets/img/project/trivia.png"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div>
-              <p>product desig</p>
-              <h2>Trivia</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                qui sed dolor
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="portfolio-image-item">
-          <img
-            class="img-item"
-            src="assets/img/project/2.jpg"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div>
-              <p>product desig</p>
-              <h2>Galeria</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                qui sed dolor
-              </p>
-            </div
-          </div>
-        </div> -->
-        <div class="portfolio-image-item">
-          <img
-            class="img-item"
-            src="assets/img/project/todolist.png"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div>
-              <p>product desig</p>
-              <h2>ToDoList</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                qui sed dolor
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-image-item portfolio-image-item-3">
-          <img
-            class="img-item a"
-            src="assets/img/project/WEATHER.png"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div>
-              <p>product desig</p>
-              <h2>App Weather</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                qui sed dolor
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-image-item">
-          <img
-            class="img-item"
-            src="assets/img/project/github.png"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div>
-              <p>product desig</p>
-              <h2>APP GitHub</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                qui sed dolor
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-image-item">
-          <img
-            class="img-item"
-            src="assets/img/project/2.jpg"
-            alt="imagen-portafolio"
-          />
-          <div class="text-center portfolio-text">
-            <div>
-              <p>product desig</p>
-              <h2>ECOMMERCE</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                qui sed dolor
-              </p>
-            </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
