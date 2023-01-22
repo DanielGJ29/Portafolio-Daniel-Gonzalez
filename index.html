@@ -12,7 +12,10 @@
       src="https://kit.fontawesome.com/a2bdb303e2.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="./assets/js/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
+
     <title>Daniel</title>
   </head>
   <body>
@@ -79,7 +82,12 @@
             </li>
           </ul>
           <div class="about-btn">
-            <a class="btn" href="#">Descargar Cv.</a>
+            <a
+              class="btn"
+              href="./assets/cv/C.V.DANIEL GONZALEZ.pdf"
+              target="_blank"
+              >Descargar Cv.</a
+            >
           </div>
         </div>
       </div>
@@ -354,24 +362,33 @@
         <h2>Contacto</h2>
         <div class="line"></div>
       </div>
-      <form action="">
+      <form id="form">
         <div class="contact-form d-flex flex-column col-6 center">
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Nombre: *"
-          />
-          <input type="email" id="email" placeholder="Correo: *" />
-          <textarea
-            name="mensage"
-            id="mensage"
-            cols="30"
-            rows="10"
-            placeholder="Mensaje"
-          ></textarea>
+          <div class="input-container">
+            <input type="text" name="name" id="name" placeholder="Nombre: *" />
+            <p class="hidden" id="alertName">Nombre requerido.</p>
+          </div>
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo: *"
+            />
+            <p class="hidden" id="alertEmail">Correo requerido.</p>
+          </div>
+          <div class="input-container">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <p class="hidden" id="alertMessage">Mensaje requerido.</p>
+          </div>
           <div class="contact-btn">
-            <button class="btn" type="button">Enviar</button>
+            <button class="btn" type="submit">Enviar</button>
           </div>
         </div>
       </form>
