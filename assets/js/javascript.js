@@ -132,42 +132,42 @@ form.addEventListener("submit", async (e) => {
   }
 
   if (inputs.email && inputs.name && inputs.message) {
-    const sgMail = require("@sendgrid/mail");
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-    const msg = {
-      to: "daniel.zam29@gmail.com", // Change to your recipient
-      from: email, // Change to your verified sender
-      subject: "Sending with SendGrid is Fun",
-      text: message,
-      html: "<strong>and easy to do anywhere, even with Node.js</strong>",
-    };
-    sgMail
-      .send(msg)
-      .then(() => {
-        console.log("Email sent");
-        const Toast = Swal.mixin({
-          toast: true,
-          position: "top-end",
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-          // didOpen: (toast) => {
-          //   toast.addEventListener("mouseenter", Swal.stopTimer);
-          //   toast.addEventListener("mouseleave", Swal.resumeTimer);
-          // },
-        });
-        Toast.fire({
-          icon: "success",
-          title: "Enviando.",
-        });
-
-        setTimeout(() => {
-          form.reset();
-        }, 3000);
-      })
-      .catch((error) => {
-        console.error(error);
+    const response = await fetch(
+      "https://formsubmit.co/ajax/37a082a67e64c19aa4043573f26c4b85",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: message,
+        }),
+      }
+    );
+    const result = await response.json();
+    if (result.success) {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        // didOpen: (toast) => {
+        //   toast.addEventListener("mouseenter", Swal.stopTimer);
+        //   toast.addEventListener("mouseleave", Swal.resumeTimer);
+        // },
       });
+      Toast.fire({
+        icon: "success",
+        title: "Enviando.",
+      });
+
+      setTimeout(() => {
+        form.reset();
+      }, 3000);
+    }
   }
 });
