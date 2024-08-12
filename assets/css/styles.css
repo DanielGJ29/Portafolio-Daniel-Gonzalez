@@ -558,6 +558,10 @@ p {
   justify-content: space-between;
 }
 
+.portfolio-text .portfolio-content .description {
+  margin-top: 20px;
+}
+
 .portfolio-text .link {
   color: white;
   font-weight: 600;
